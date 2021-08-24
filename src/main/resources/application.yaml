@@ -1,0 +1,10 @@
+naver:
+  url:
+    search:
+      local: https://openapi.naver.com/v1/search/local.json
+      image: https://openapi.naver.com/v1/search/image
+  client:
+    id: YJH21CGt7XCdGA3HuxEA
+    secret: Vw1Zze8az8
+
+
