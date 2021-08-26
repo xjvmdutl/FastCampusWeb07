@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MemoryDBEntity {//Data들
-    private int index;
+    private Integer index;//DB에 0이 들어갈수도 있다
 }

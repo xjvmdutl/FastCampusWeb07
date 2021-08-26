@@ -43,7 +43,7 @@ public class WishListRepositoryTest {
         var saveEntity = wishListRepository.save(expected);
 
         Assertions.assertEquals("update Test",saveEntity.getTitle());
-        Assertions.assertEquals(1,wishListRepository.listAll().size());
+        Assertions.assertEquals(1,wishListRepository.findAll().size());
 
     }
 
@@ -60,7 +60,7 @@ public class WishListRepositoryTest {
         var wishListEntity =create();
         wishListRepository.save(wishListEntity);
 
-        int count = wishListRepository.listAll().size();
+        int count = wishListRepository.findAll().size();
         Assertions.assertEquals(0,count);
     }
     @Test
@@ -72,7 +72,7 @@ public class WishListRepositoryTest {
         var wishListEntity2 =create();
         wishListRepository.save(wishListEntity2);
 
-        int count = wishListRepository.listAll().size();
+        int count = wishListRepository.findAll().size();
         Assertions.assertEquals(2,count);
     }
 }
